@@ -8,28 +8,34 @@
   <meta name="CocoaVersion" content="2487.2">
   <style type="text/css">
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
   </style>
 </head>
 <body>
-<p class="p1">{% include base_path %}</p>
 <p class="p1">&lt;meta name="google-site-verification" content="fFH9B3Hk8kKRidRpywqLtZsr4KVEm7tthvtjQzIGnyw" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- SEO Meta Tags --&gt;</p>
 <p class="p1">{% if site.url %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{% assign seo_url = site.url | append: site.baseurl %}</p>
 <p class="p1">{% endif %}</p>
 <p class="p1">{% assign seo_url = seo_url | default: site.github.url %}</p>
+<p class="p2"><br></p>
 <p class="p1">{% if page.title %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}</p>
 <p class="p1">{% endif %}</p>
 <p class="p1">{% if seo_title %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}</p>
 <p class="p1">{% endif %}</p>
+<p class="p2"><br></p>
 <p class="p1">{% if site.url %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}</p>
 <p class="p1">{% endif %}</p>
+<p class="p2"><br></p>
 <p class="p1">{% assign seo_description = page.description | default: page.excerpt | default: site.description %}</p>
 <p class="p1">{% if seo_description %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}</p>
 <p class="p1">{% endif %}</p>
+<p class="p2"><br></p>
 <p class="p1">{% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}</p>
 <p class="p1">{% if seo_author %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{% if seo_author.twitter %}</p>
@@ -43,45 +49,12 @@
 <p class="p1"><span class="Apple-converted-space">  </span>{% endif %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}</p>
 <p class="p1">{% endif %}</p>
-<p class="p1">{% if seo_url %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if page.excerpt %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if site.twitter.username %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% if page.header.image %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% else %}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% if site.og_image %}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% endif %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% endif %}</p>
-<p class="p1">{% if seo_author_twitter %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if site.facebook %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% if site.facebook.publisher %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% endif %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% if site.facebook.app_id %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% endif %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if page.header.image %}</p>
-<p class="p1">{% elsif page.header.overlay_image %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if page.date %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if paginator.previous_page %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if paginator.next_page %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if site.og_image %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if site.social %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if site.google_site_verification %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if site.bing_site_verification %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if site.alexa_site_verification %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if site.yandex_site_verification %}</p>
-<p class="p1">{% endif %}</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Open Graph Tags --&gt;</p>
+<p class="p1">&lt;meta property="og:locale" content="{{ site.locale | default: "en" }}"&gt;</p>
+<p class="p1">&lt;meta property="og:site_name" content="{{ site.title }}"&gt;</p>
+<p class="p1">&lt;meta property="og:title" content="{{ seo_title | default: site.title }}"&gt;</p>
+<p class="p1">&lt;meta property="og:description" content="{{ seo_description }}"&gt;</p>
+<p class="p1">&lt;meta property="og:url" content="{{ seo_url }}"&gt;</p>
 </body>
 </html>
