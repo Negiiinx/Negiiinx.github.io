@@ -8,10 +8,32 @@
   <meta name="CocoaVersion" content="2487.2">
   <style type="text/css">
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
     span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
 <p class="p1"><span class="s1">&lt;meta name="google-site-verification" content="fFH9B3Hk8kKRidRpywqLtZsr4KVEm7tthvtjQzIGnyw" /&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% if site.url %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% assign seo_url = site.url | append: site.baseurl %}</span></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<p class="p1"><span class="s1">{% assign seo_url = seo_url | default: site.github.url %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% if page.title %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}</span></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<p class="p1"><span class="s1">{% if seo_title %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}</span></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% if site.url %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}</span></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% assign seo_description = page.description | default: page.excerpt | default: site.description %}</span></p>
+<p class="p1"><span class="s1">{% if seo_description %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}</span></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
 </body>
 </html>
