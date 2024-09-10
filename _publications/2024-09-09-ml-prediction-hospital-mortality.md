@@ -1,7 +1,7 @@
 ---
 title: "A Machine Learning-Based Prediction of Hospital Mortality in Mechanically Ventilated ICU Patients"
 collection: publications
-category: "Journal Articles"
+category: manuscripts
 permalink: /publication/2024-09-09-ml-prediction-hospital-mortality
 date: 2024-09-09
 venue: "PLOS ONE"
