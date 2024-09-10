@@ -13,6 +13,6 @@ My research focuses on developing advanced predictive models using AI and machin
 
 In addition to my research, I have worked on a wide range of projects utilizing Natural Language Processing (NLP), Machine Learning, Optimization techniques, Large Language Models (LLM), Generative AI, and more for various applications such as transportation, finance, agriculture, manufacturing, and medical fields.
 
-I am proficient in Python, TensorFlow, PyTorch, scikit-learn, and Gurobi, with experience in statistical analysis, data-driven decision-making, and reinforcement learning. I am always eager to collaborate on innovative projects that push the boundaries of what AI and analytics can achieve.
+I am proficient in Python, TensorFlow, PyTorch, scikit-learn, and Gurobi, with expertise in statistical analysis, data-driven decision-making, and reinforcement learning. I’m always eager to collaborate on innovative projects pushing the boundaries of AI and analytics.
 
 You can explore my [publications](https://negiiinx.github.io/publications/) and [projects](https://negiiinx.github.io/projects/) to learn more about my contributions to AI, optimization, and various applications across industries.
