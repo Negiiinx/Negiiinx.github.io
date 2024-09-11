@@ -1,5 +1,5 @@
 ---
-title: "Optimization"
+title: "ISE 330 Optimization"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2024-fall-optimization
