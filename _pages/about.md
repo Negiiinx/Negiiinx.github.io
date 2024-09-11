@@ -9,7 +9,7 @@ redirect_from:
 
 Welcome to my personal website! I am a passionate researcher and data scientist with a strong background in Artificial Intelligence, Machine Learning, and Optimization, specializing in healthcare applications, transportation, and Manufacturing. I am currently a graduate student at the University of Southern California, focusing on Analytics. Before this, I received my bachelor's degree from Sharif University of Technology.
 
-My research focuses on developing advanced predictive models using AI and machine learning techniques to solve real-world problems in healthcare and transportation. I have co-authored several papers, including journal and conference publications, applying process mining, machine learning, deep learning, and optimization to enhance mortality prediction for ICU patients. 
+My research focuses on developing advanced predictive models using AI and machine learning techniques to solve real-world problems in healthcare and transportation. I have co-authored several papers, applying process mining, machine learning, deep learning, and optimization to enhance mortality prediction for ICU patients. 
 
 In addition to my research, I have worked on a wide range of projects utilizing Natural Language Processing (NLP), Machine Learning, Optimization techniques, Large Language Models (LLM), Generative AI, and more for various applications such as transportation, finance, agriculture, manufacturing, and medical fields.
 
