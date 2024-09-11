@@ -1,5 +1,5 @@
 ---
-title: "Quantum Optimization Algorithms"
+title: "ISE 612 Quantum Optimization Algorithms"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2024-fall-quantum-optimization
