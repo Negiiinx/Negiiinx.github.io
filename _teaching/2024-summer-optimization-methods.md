@@ -1,5 +1,5 @@
 ---
-title: "Optimization Methods for Analytics"
+title: "ISE 530 Optimization Methods for Analytics"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2024-summer-optimization-methods
